@@ -1,8 +1,16 @@
-#include<stdio.h>
-int main(void){
-	//단어 입력받음
-	//단어길이N 확정
-	//10글자씩 출력
-	
-	return 0; 
+#include<iostream>
+#include<string>
+#include<vector>
+using namespace std;
+int main(){
+	string N;
+	getline(cin, N);
+	for(int i=0;i<N.size();i++){
+		cout<<N[i];
+		if((i+1)%10==0){
+			cout<<endl;
+		}
+	}
+	cout<<endl;
+	return 0;
 }
