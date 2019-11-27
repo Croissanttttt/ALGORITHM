@@ -2,8 +2,8 @@
 #include<algorithm>
 using namespace std;
 int main(){
-	int score[7];
-	int num[7];
+	int score[8];
+	int num[8];
 	int sum=0;
 	for(int i=0;i<8;i++){
 		cin>>score[i];
@@ -21,18 +21,6 @@ int main(){
 		score[i]=max;
 		num[i]=index+1;
 	}
-/*	for(int i=0;i<8;i++){
-		int m = num[i];
-		int ind = i;
-		for(int j=i+1;j<8;j++){
-			if(num[j]<m){
-				m=num[j];
-				ind=j;
-			}
-		}
-		num[ind]=num[i];
-		num[i]=m;
-	}*/
 	sort(num,num+5);
 	for(int i=0;i<5;i++){
 		sum=sum+score[i];
