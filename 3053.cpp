@@ -1,9 +1,10 @@
-#include<stdio.h>
-#define PI 3.141593
-int main(void){
-	float R, Su, St;
-	scanf("%f",&R);
-	Su=PI*(R*R);
-	St=2*(R*R);
-	printf("%f\n%f",Su,St);
+#include <stdio.h>
+#define pi 3.14159265358979
+
+int main(void) {
+ int r;
+ scanf("%d", &r);
+ printf("%.6lf\n%.6lf", r*r*pi, 2.0*r*r);
+ return 0;
 }
+
