@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+<<<<<<< HEAD
 using namespace std;
 int main() {
 	int T;
@@ -31,5 +32,28 @@ int main() {
 		cout << '\n';
 	}
 
+=======
+#include<cstring>
+using namespace std;
+int main(){
+	int T;
+	cin>>T;
+	string ans;
+	for(int i = 0; i < T; i++){
+		string q;
+		string key;
+		getline(cin,q);
+		getline(cin,key);
+		for(int j = 0; j<q.length();j++){
+			char* temp;
+			temp = strchr(key,q[j]);
+			if(temp==NULL){
+				ans[j] = " ";
+				continue;
+			}
+			ans[j] = temp + 64;
+		}
+	}
+>>>>>>> d420c373346c12f6500078a6c6a7fb8a7b18e678
 	return 0;
 }
